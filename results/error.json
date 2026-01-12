@@ -1,0 +1,24 @@
+{
+  "exact_solution": "y = e^x - x - 1",
+  "error_type": "Absolute Error",
+  "errors": [
+    {
+      "x": 0.0,
+      "exact": 1.000000,
+      "numeric": 1.000000,
+      "error": 0.000000
+    },
+    {
+      "x": 0.1,
+      "exact": 1.105171,
+      "numeric": 1.105200,
+      "error": 0.000029
+    },
+    {
+      "x": 0.2,
+      "exact": 1.221403,
+      "numeric": 1.221403,
+      "error": 0.000000
+    }
+  ]
+}
