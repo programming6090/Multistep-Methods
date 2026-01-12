@@ -1,0 +1,33 @@
+{
+  "problem": {
+    "equation": "dy/dx = x + y",
+    "exact_solution": "y = e^x - x - 1"
+  },
+
+  "initial_conditions": {
+    "x0": 0.0,
+    "y0": 1.0
+  },
+
+  "range": {
+    "xn": 1.0,
+    "step_size": 0.1
+  },
+
+  "methods": {
+    "use_rk4": true,
+    "adams_bashforth": {
+      "order": 3
+    },
+    "adams_moulton": {
+      "order": 2
+    },
+    "predictor_corrector": true
+  },
+
+  "output": {
+    "save_results": true,
+    "output_format": "json",
+    "error_analysis": true
+  }
+}
