@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multistep Methods – Numerical Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 900px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #111827;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table, th, td {
+      border: 1px solid #d1d5db;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #e5e7eb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Multistep Numerical Methods</h1>
+  <p>Adams-Bashforth & Adams-Moulton</p>
+</header>
+
+<section>
+  <h2>Project Information</h2>
+  <p>
+    <strong>Course:</strong> Numerical Methods (CSE261.1)<br>
+    <strong>Assignment:</strong> Multistep Methods Implementation<br>
+    <strong>Methods Used:</strong> AB2, AB3, Adams-Moulton, Predictor-Corrector, RK4
+  </p>
+</section>
+
+<section>
+  <h2>Problem Description</h2>
+  <p>
+    This project solves ordinary differential equations (ODEs) using
+    multistep numerical methods and compares the results with the
+    classical Runge–Kutta 4th order (RK4) method.
+  </p>
+</section>
+
+<section>
+  <h2>Sample Numerical Results</h2>
+
+  <table>
+    <tr>
+      <th>x</th>
+      <th>AB3 Result</th>
+      <th>AM Result</th>
+      <th>RK4 Result</th>
+      <th>Error</th>
+    </tr>
+    <tr>
+      <td>0.0</td>
+      <td>1.0000</td>
+      <td>1.0000</td>
+      <td>1.0000</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>0.1</td>
+      <td>1.1052</td>
+      <td>1.1051</td>
+      <td>1.1052</td>
+      <td>0.0001</td>
+    </tr>
+  </table>
+
+  <p style="margin-top:10px;">
+    <em>Note: Actual results are generated from Python code.</em>
+  </p>
+</section>
+
+<section>
+  <h2>Conclusion</h2>
+  <p>
+    Multistep methods provide efficient solutions for ODEs once starting
+    values are known. Adams-Moulton methods generally produce more accurate
+    results compared to explicit Adams-Bashforth methods.
+  </p>
+</section>
+
+<footer>
+  © 2026 | Numerical Methods Project | Python & HTML
+</footer>
+
+</body>
+</html>
